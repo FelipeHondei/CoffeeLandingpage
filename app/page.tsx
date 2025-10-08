@@ -38,24 +38,28 @@ export default function CoffeeShopLanding() {
             backgroundImage: `url('/Externa.png')`,
           }}
         >
-          <div className="absolute inset-0 bg-black/40" />
+          <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/50 to-black/70" />
         </div>
         <div className="relative z-10 text-center text-white max-w-4xl mx-auto px-4">
-          <h1 className="text-5xl md:text-7xl font-bold mb-6 text-balance">Conheça a arte do café</h1>
-          <p className="text-xl md:text-2xl mb-8 text-pretty opacity-90">
-            Um bom copo virá uma boa memoria.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" className="text-lg px-8 py-6">
-              Veja nosso menu
-            </Button>
-            <Button
-              size="lg"
-              variant="outline"
-              className="text-lg px-8 py-6 bg-white/10 border-white/30 text-white hover:bg-white/20"
-            >
-              Faça uma visita
-            </Button>
+          <div className="backdrop-blur-sm bg-black/30 rounded-3xl p-8 md:p-12 shadow-2xl border border-white/10">
+            <h1 className="text-5xl md:text-7xl font-bold mb-6 text-balance drop-shadow-2xl">
+              Conheça a arte do café
+            </h1>
+            <p className="text-xl md:text-2xl mb-8 text-pretty drop-shadow-lg">
+              Um bom copo virá uma boa memoria.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <Button size="lg" className="text-lg px-8 py-6 shadow-xl">
+                Veja nosso menu
+              </Button>
+              <Button
+                size="lg"
+                variant="outline"
+                className="text-lg px-8 py-6 bg-white/20 backdrop-blur-sm border-white/40 text-white hover:bg-white/30 shadow-xl"
+              >
+                Faça uma visita
+              </Button>
+            </div>
           </div>
         </div>
       </section>
@@ -324,7 +328,7 @@ export default function CoffeeShopLanding() {
                 <span className="text-xl font-bold">Dogtown Coffee</span>
               </div>
               <p className="text-muted-foreground text-pretty">
-                Criando café memoráveis desde 2024. Conheça nossa hisroria e paixão por café.
+                Criando café memoráveis desde 2077. Conheça nossa hisroria e paixão por café.
               </p>
             </div>
             <div>
@@ -378,7 +382,7 @@ export default function CoffeeShopLanding() {
             </div>
           </div>
           <div className="border-t border-border mt-8 pt-8 text-center text-muted-foreground">
-            <p>&copy; 2024 Dogtown coffee. Todos os direitos reservados.</p>
+            <p>&copy; 2077 Dogtown coffee. Todos os direitos reservados.</p>
           </div>
         </div>
       </footer>
