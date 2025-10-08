@@ -11,7 +11,7 @@ export default function CoffeeShopLanding() {
         <div className="container mx-auto px-4 py-4 flex items-center justify-between">
           <div className="flex items-center gap-2">
             <Coffee className="h-8 w-8 text-primary" />
-            <span className="text-2xl font-bold text-foreground">Brew & Bean</span>
+            <span className="text-2xl font-bold text-foreground">Dogtown Coffee</span>
           </div>
           <div className="hidden md:flex items-center gap-8">
             <a href="#menu" className="text-foreground hover:text-primary transition-colors">
@@ -76,22 +76,22 @@ export default function CoffeeShopLanding() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {[
               {
-                name: "Signature Espresso",
-                description: "Gostoso, intenso e equilibrado com notas de chocolate amargo",
+                name: "V (Signature Espresso caramel)",
+                description: " Uma combinação explosiva de chocolate amargo com caramelo",
                 price: "R$ 5,90",
-                image: "/cozy-coffee-shop-interior-with-warm-lighting--stea.jpg",
+                image: "/V.png",
               },
               {
-                name: "Caramel Macchiato",
-                description: "expresso com leite e um toque de caramelo",
+                name: " johnny Silverhand (Caramel Macchiato)",
+                description: "Intenso expresso com leite com caramelo",
                 price: "R$ 8,50",
-                image: "/coffee-shop-exterior-with-large-windows--outdoor-s.jpg",
+                image: "/johnny.png",
               },
               {
-                name: "Cold Brew Delight",
-                description: "Leve, refrescante, gelado com um toque de vanilla",
+                name: " Adam smasher (Cold Brew Delight)",
+                description: "Forte, gelado e com um toque de vanilla",
                 price: "R$ 5,00",
-                image: "/abstract-geometric-shapes.png",
+                image: "/Smascher.png",
               },
             ].map((product, index) => (
               <Card key={index} className="group hover:shadow-lg transition-all duration-300 overflow-hidden">
@@ -138,27 +138,27 @@ export default function CoffeeShopLanding() {
             {[
               {
                 title: "Espaço de convivência",
-                image: "/abstract-geometric-shapes.png",
+                image: "/Interna.png",
               },
               {
                 title: "Área do barista",
-                image: "/cozy-coffee-shop-interior-with-warm-lighting--stea.jpg",
+                image: "/Barista.png",
               },
               {
                 title: "Cantinho do livro",
-                image: "/placeholder.jpg",
+                image: "/Livro.png",
               },
               {
                 title: "Mesa Comunitária",
-                image: "/placeholder-user.jpg",
+                image: "/Mesa.png",
               },
               {
                 title: "Área Externa",
-                image: "/coffee-shop-exterior-with-large-windows--outdoor-s.jpg",
+                image: "Externa.png",
               },
               {
                 title: "Café em Grão",
-                image: "/placeholder-logo.png",
+                image: "/Grao.png",
               },
             ].map((item, index) => (
               <div key={index} className="group relative overflow-hidden rounded-lg aspect-square">
@@ -321,7 +321,7 @@ export default function CoffeeShopLanding() {
             <div>
               <div className="flex items-center gap-2 mb-4">
                 <Coffee className="h-6 w-6 text-primary" />
-                <span className="text-xl font-bold">Brew & Bean</span>
+                <span className="text-xl font-bold">Dogtown Coffee</span>
               </div>
               <p className="text-muted-foreground text-pretty">
                 Criando café memoráveis desde 2024. Conheça nossa hisroria e paixão por café.
@@ -378,7 +378,7 @@ export default function CoffeeShopLanding() {
             </div>
           </div>
           <div className="border-t border-border mt-8 pt-8 text-center text-muted-foreground">
-            <p>&copy; 2024 Brew & Bean. Todos os direitos reservados.</p>
+            <p>&copy; 2024 Dogtown coffee. Todos os direitos reservados.</p>
           </div>
         </div>
       </footer>

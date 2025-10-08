@@ -5,9 +5,9 @@ import { Analytics } from '@vercel/analytics/next'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: 'Hondei Coffee',
-  description: 'The best coffee in town',
-  generator: 'Hondei Coffee',
+  title: 'Dogtown Coffee',
+  description: 'Criado por Felipe Hondei',
+  generator: 'Felipe Hondei',
 }
 
 export default function RootLayout({
