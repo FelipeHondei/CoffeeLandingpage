@@ -123,3 +123,34 @@
     @apply bg-background text-foreground;
   }
 }
+
+/* Reveal animation for sections */
+.reveal {
+  opacity: 0;
+  transform: translateY(18px) scale(0.995);
+  transition: opacity 520ms cubic-bezier(.2,.9,.2,1), transform 520ms cubic-bezier(.2,.9,.2,1);
+}
+.reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+
+/* Smoother hover and image transitions */
+.smooth-hover img,
+.smooth-hover .card-image {
+  transition: transform 420ms cubic-bezier(.2,.9,.2,1), filter 320ms ease;
+}
+.smooth-hover:hover img,
+.smooth-hover:hover .card-image {
+  transform: scale(1.06);
+}
+
+/* Card lift */
+.card-lift {
+  transition: transform 360ms cubic-bezier(.2,.9,.2,1), box-shadow 360ms ease;
+}
+.card-lift:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 14px 30px rgba(2,6,23,0.12);
+}
+

@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Star, MapPin, Clock, Coffee, Users, Award } from "lucide-react"
+import Reveal from '@/components/ui/reveal'
 
 export default function CoffeeShopLanding() {
   return (
@@ -33,7 +34,8 @@ export default function CoffeeShopLanding() {
       </nav>
 
       {/* Hero Section */}
-      <section id="hero" className="relative h-screen flex items-center justify-center overflow-hidden">
+      <Reveal>
+        <section id="hero" className="relative h-screen flex items-center justify-center overflow-hidden">
         <div
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{
@@ -60,10 +62,12 @@ export default function CoffeeShopLanding() {
             </div>
           </div>
         </div>
-      </section>
+        </section>
+      </Reveal>
 
       {/* Featured Products */}
-      <section id="menu" className="py-20 bg-muted/30">
+      <Reveal>
+        <section id="menu" className="py-20 bg-muted/30">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <Badge variant="secondary" className="mb-4">
@@ -96,12 +100,12 @@ export default function CoffeeShopLanding() {
                 image: "/smasher.png",
               },
             ].map((product, index) => (
-              <Card key={index} className="group hover:shadow-lg transition-all duration-300 overflow-hidden flex flex-col">
+              <Card key={index} className="group hover:shadow-lg transition-all duration-300 overflow-hidden flex flex-col card-lift smooth-hover">
                 <div className="aspect-square overflow-hidden">
                   <img
                     src={product.image}
                     alt={product.name}
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                    className="w-full h-full object-cover card-image"
                   />
                 </div>
                 <CardContent className="p-6 flex flex-col flex-1">
@@ -123,10 +127,12 @@ export default function CoffeeShopLanding() {
             ))}
           </div>
         </div>
-      </section>
+        </section>
+      </Reveal>
 
       {/* Atmosphere Showcase */}
-      <section id="about" className="py-20">
+      <Reveal>
+        <section id="about" className="py-20">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <Badge variant="secondary" className="mb-4">
@@ -165,11 +171,11 @@ export default function CoffeeShopLanding() {
                 image: "/Grao.png",
               },
             ].map((item, index) => (
-              <div key={index} className="group relative overflow-hidden rounded-lg aspect-square">
+              <div key={index} className="group relative overflow-hidden rounded-lg aspect-square card-lift smooth-hover">
                 <img
                   src={item.image}
                   alt={item.title}
-                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                  className="w-full h-full object-cover card-image"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
                 <div className="absolute bottom-4 left-4 text-white">
@@ -179,10 +185,12 @@ export default function CoffeeShopLanding() {
             ))}
           </div>
         </div>
-      </section>
+        </section>
+      </Reveal>
 
       {/* Stats Section */}
-      <section className="py-20 bg-primary text-primary-foreground">
+      <Reveal>
+        <section className="py-20 bg-primary text-primary-foreground">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
             {[
@@ -199,10 +207,12 @@ export default function CoffeeShopLanding() {
             ))}
           </div>
         </div>
-      </section>
+        </section>
+      </Reveal>
 
       {/* Customer Testimonials */}
-      <section className="py-20 bg-muted/30">
+      <Reveal>
+        <section className="py-20 bg-muted/30">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <Badge variant="secondary" className="mb-4">
@@ -235,7 +245,7 @@ export default function CoffeeShopLanding() {
                 rating: 5,
               },
             ].map((testimonial, index) => (
-              <Card key={index} className="p-6">
+              <Card key={index} className="p-6 card-lift smooth-hover">
                 <CardContent className="p-0">
                   <div className="flex mb-4">
                     {[...Array(testimonial.rating)].map((_, i) => (
@@ -252,10 +262,12 @@ export default function CoffeeShopLanding() {
             ))}
           </div>
         </div>
-      </section>
+        </section>
+      </Reveal>
 
       {/* Location & Hours */}
-      <section id="location" className="py-20">
+      <Reveal>
+        <section id="location" className="py-20">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
@@ -296,10 +308,12 @@ export default function CoffeeShopLanding() {
             </div>
           </div>
         </div>
-      </section>
+        </section>
+      </Reveal>
 
       {/* Newsletter CTA */}
-      <section className="py-20 bg-primary text-primary-foreground">
+      <Reveal>
+        <section className="py-20 bg-primary text-primary-foreground">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-4xl md:text-5xl font-bold mb-6 text-balance">Fique por dentro das novidades</h2>
           <p className="text-xl mb-8 opacity-90 max-w-2xl mx-auto text-pretty">
@@ -316,7 +330,8 @@ export default function CoffeeShopLanding() {
             </Button>
           </div>
         </div>
-      </section>
+        </section>
+      </Reveal>
 
       {/* Footer */}
       <footer className="py-12 bg-background border-t border-border">
