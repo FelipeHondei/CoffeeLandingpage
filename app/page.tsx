@@ -49,16 +49,11 @@ export default function CoffeeShopLanding() {
               Um bom copo virá uma boa memoria.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button href="#menu" size="lg" className="text-lg px-8 py-6 shadow-xl">
-                Veja nosso menu
+              <Button asChild size="lg" className="text-lg px-8 py-6 shadow-xl">
+                <a href="#menu">Veja nosso menu</a>
               </Button>
-              <Button
-              href="#location"
-                size="lg"
-                variant="outline"
-                className="text-lg px-8 py-6 bg-white/20 backdrop-blur-sm border-white/40 text-white hover:bg-white/30 shadow-xl"
-              >
-                Faça uma visita
+              <Button asChild size="lg" variant="outline" className="text-lg px-8 py-6 bg-white/20 backdrop-blur-sm border-white/40 text-white hover:bg-white/30 shadow-xl">
+                <a href="#location">Faça uma visita</a>
               </Button>
             </div>
           </div>
