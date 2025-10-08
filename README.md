@@ -1,30 +1,85 @@
-# Coffee shop landing page
+# ☕ Brew & Bean - Coffee Shop Landing Page
 
-*Automatically synced with your [v0.app](https://v0.app) deployments*
+Uma landing page moderna e elegante para cafeteria, desenvolvida com Next.js 14, React e Tailwind CSS.
 
-[![Deployed on Vercel](https://img.shields.io/badge/Deployed%20on-Vercel-black?style=for-the-badge&logo=vercel)](https://vercel.com/felipe-hondeis-projects/v0-coffee-shop-landing-page)
-[![Built with v0](https://img.shields.io/badge/Built%20with-v0.app-black?style=for-the-badge)](https://v0.app/chat/projects/dd9C8uZ8GRN)
+## 🚀 Funcionalidades
 
-## Overview
+- **Design Responsivo**: Adaptado para todos os dispositivos (desktop, tablet e mobile)
+- **Interface Moderna**: Design clean com paleta de cores quentes em tons de rosa
+- **Seções Completas**:
+  - Hero section com imagem de fundo impactante
+  - Menu de produtos com cards interativos
+  - Galeria de fotos do ambiente
+  - Estatísticas e conquistas
+  - Depoimentos de clientes
+  - Informações de localização e horários
+  - Newsletter signup
+  - Footer informativo
+- **Componentes UI**: Utilizando shadcn/ui para componentes acessíveis e estilizados
+- **Otimização**: Performance otimizada com Next.js 14
+- **Animações**: Transições suaves e efeitos hover
 
-This repository will stay in sync with your deployed chats on [v0.app](https://v0.app).
-Any changes you make to your deployed app will be automatically pushed to this repository from [v0.app](https://v0.app).
+## 🛠️ Tecnologias Utilizadas
 
-## Deployment
+- **Framework**: Next.js 14.2.16
+- **Linguagem**: TypeScript
+- **Estilização**: Tailwind CSS
+- **Componentes UI**: shadcn/ui
+- **Ícones**: Lucide React
+- **Fontes**: Geist Sans & Geist Mono
 
-Your project is live at:
+## 📦 Estrutura do Projeto
 
-**[https://vercel.com/felipe-hondeis-projects/v0-coffee-shop-landing-page](https://vercel.com/felipe-hondeis-projects/v0-coffee-shop-landing-page)**
+```
+├── app/
+│   ├── globals.css          # Estilos globais e variáveis CSS
+│   ├── layout.tsx            # Layout raiz da aplicação
+│   └── page.tsx              # Página principal (landing page)
+├── components/
+│   ├── ui/                   # Componentes UI reutilizáveis
+│   │   ├── badge.tsx
+│   │   ├── button.tsx
+│   │   └── card.tsx
+│   └── theme-provider.tsx    # Provider de temas
+├── lib/
+│   └── utils.ts              # Funções utilitárias
+└── public/                   # Imagens e assets estáticos
+```
 
-## Build your app
+### Conteúdo
 
-Continue building your app on:
+Todo o conteúdo da landing page pode ser editado diretamente em `app/page.tsx`, incluindo:
+- Textos e descrições
+- Produtos do menu
+- Depoimentos
+- Informações de contato
+- Links de navegação
 
-**[https://v0.app/chat/projects/dd9C8uZ8GRN](https://v0.app/chat/projects/dd9C8uZ8GRN)**
+## 🤝 Contribuindo
 
-## How It Works
+Contribuições são bem-vindas! Sinta-se à vontade para:
 
-1. Create and modify your project using [v0.app](https://v0.app)
-2. Deploy your chats from the v0 interface
-3. Changes are automatically pushed to this repository
-4. Vercel deploys the latest version from this repository
+1. Fazer um fork do projeto
+2. Criar uma branch para sua feature (`git checkout -b feature/AmazingFeature`)
+3. Commit suas mudanças (`git commit -m 'Add some AmazingFeature'`)
+4. Push para a branch (`git push origin feature/AmazingFeature`)
+5. Abrir um Pull Request
+
+## 📄 Licença
+
+Este projeto é de código aberto e está disponível sob a licença MIT.
+
+## 👤 Autor
+
+**Felipe Hondei**
+
+- GitHub: [@felipe-hondei](https://github.com/FelipeHondei)
+
+## 🙏 Agradecimentos
+
+- [shadcn/ui](https://ui.shadcn.com) - Componentes UI
+- [Lucide](https://lucide.dev) - Ícones
+
+---
+
+⭐ Se este projeto foi útil para você, considere dar uma estrela no repositório!
