@@ -35,7 +35,7 @@ export default function CoffeeShopLanding() {
         <div
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{
-            backgroundImage: `url('/cozy-coffee-shop-interior-with-warm-lighting--stea.jpg')`,
+            backgroundImage: `url('/Externa.png')`,
           }}
         >
           <div className="absolute inset-0 bg-black/40" />
@@ -76,22 +76,22 @@ export default function CoffeeShopLanding() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {[
               {
-                name: "V (Signature Espresso caramel)",
-                description: " Uma combinação explosiva de chocolate amargo com caramelo",
+                name: "V",
+                description: " Uma combinação explosiva de chocolate amargo com caramelo (Signature Espresso caramel)",
                 price: "R$ 5,90",
                 image: "/V.png",
               },
               {
-                name: " johnny Silverhand (Caramel Macchiato)",
-                description: "Intenso expresso com leite com caramelo",
+                name: " johnny Silverhand",
+                description: "Intenso expresso com leite com caramelo (Caramel Macchiato)",
                 price: "R$ 8,50",
                 image: "/johnny.png",
               },
               {
-                name: " Adam smasher (Cold Brew Delight)",
-                description: "Forte, gelado e com um toque de vanilla",
+                name: " Adam smasher ",
+                description: "Forte, gelado e com um toque de vanilla (Cold Brew Delight)",
                 price: "R$ 5,00",
-                image: "/Smascher.png",
+                image: "/smasher.png",
               },
             ].map((product, index) => (
               <Card key={index} className="group hover:shadow-lg transition-all duration-300 overflow-hidden">
