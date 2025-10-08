@@ -18,13 +18,13 @@ export default function CoffeeShopLanding() {
               Menu
             </a>
             <a href="#about" className="text-foreground hover:text-primary transition-colors">
-              About
+              Sobre
             </a>
             <a href="#location" className="text-foreground hover:text-primary transition-colors">
-              Location
+              Localização
             </a>
             <Button variant="default" size="sm">
-              Order Now
+              Peça agora
             </Button>
           </div>
         </div>
@@ -41,20 +41,20 @@ export default function CoffeeShopLanding() {
           <div className="absolute inset-0 bg-black/40" />
         </div>
         <div className="relative z-10 text-center text-white max-w-4xl mx-auto px-4">
-          <h1 className="text-5xl md:text-7xl font-bold mb-6 text-balance">Experience the Art of Coffee</h1>
+          <h1 className="text-5xl md:text-7xl font-bold mb-6 text-balance">Conheça a arte do café</h1>
           <p className="text-xl md:text-2xl mb-8 text-pretty opacity-90">
-            Where every cup tells a story and every moment becomes a memory
+            Um bom copo virá uma boa memoria.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button size="lg" className="text-lg px-8 py-6">
-              Explore Our Menu
+              Veja nosso menu
             </Button>
             <Button
               size="lg"
               variant="outline"
               className="text-lg px-8 py-6 bg-white/10 border-white/30 text-white hover:bg-white/20"
             >
-              Visit Us Today
+              Faça uma visita
             </Button>
           </div>
         </div>
@@ -65,12 +65,11 @@ export default function CoffeeShopLanding() {
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <Badge variant="secondary" className="mb-4">
-              Our Signature
+              Mais vendidos
             </Badge>
-            <h2 className="text-4xl md:text-5xl font-bold mb-6 text-balance">Crafted with Passion</h2>
+            <h2 className="text-4xl md:text-5xl font-bold mb-6 text-balance">Feito com amor</h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto text-pretty">
-              Each drink is carefully crafted using premium beans sourced from the finest coffee regions around the
-              world
+              Toda bebida é feita com grãos selecionados e paixão por café
             </p>
           </div>
 
@@ -78,27 +77,27 @@ export default function CoffeeShopLanding() {
             {[
               {
                 name: "Signature Espresso",
-                description: "Rich, bold, and perfectly balanced with notes of dark chocolate",
-                price: "$4.50",
-                image: "artisanal espresso shot in elegant white cup with perfect crema",
+                description: "Gostoso, intenso e equilibrado com notas de chocolate amargo",
+                price: "R$ 5,90",
+                image: "/cozy-coffee-shop-interior-with-warm-lighting--stea.jpg",
               },
               {
                 name: "Caramel Macchiato",
-                description: "Smooth espresso with steamed milk and sweet caramel drizzle",
-                price: "$5.75",
-                image: "caramel macchiato with beautiful latte art and caramel drizzle",
+                description: "expresso com leite e um toque de caramelo",
+                price: "R$ 8,50",
+                image: "/coffee-shop-exterior-with-large-windows--outdoor-s.jpg",
               },
               {
                 name: "Cold Brew Delight",
-                description: "Smooth, refreshing cold brew with a hint of vanilla",
-                price: "$4.25",
-                image: "tall glass of cold brew coffee with ice and condensation",
+                description: "Leve, refrescante, gelado com um toque de vanilla",
+                price: "R$ 5,00",
+                image: "/abstract-geometric-shapes.png",
               },
             ].map((product, index) => (
               <Card key={index} className="group hover:shadow-lg transition-all duration-300 overflow-hidden">
                 <div className="aspect-square overflow-hidden">
                   <img
-                    src={`/abstract-geometric-shapes.png?height=400&width=400&query=${product.image}`}
+                    src={product.image}
                     alt={product.name}
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                   />
@@ -113,7 +112,7 @@ export default function CoffeeShopLanding() {
                     variant="outline"
                     className="w-full group-hover:bg-primary group-hover:text-primary-foreground transition-colors bg-transparent"
                   >
-                    Add to Order
+                    Adicione o pedido
                   </Button>
                 </CardContent>
               </Card>
@@ -127,44 +126,44 @@ export default function CoffeeShopLanding() {
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <Badge variant="secondary" className="mb-4">
-              Our Space
+              Nosso espaço
             </Badge>
-            <h2 className="text-4xl md:text-5xl font-bold mb-6 text-balance">A Place to Belong</h2>
+            <h2 className="text-4xl md:text-5xl font-bold mb-6 text-balance">Sinta-se em casa</h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto text-pretty">
-              Step into our warm, inviting space where comfort meets style
+              Fique a vontade para relaxar, onde o estilo e o conforto se encontram
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {[
               {
-                title: "Cozy Seating",
-                image: "comfortable leather armchairs and wooden tables in warm coffee shop lighting",
+                title: "Espaço de convivência",
+                image: "/abstract-geometric-shapes.png",
               },
               {
-                title: "Artisan Bar",
-                image: "professional coffee bar with espresso machine and skilled barista at work",
+                title: "Área do barista",
+                image: "/cozy-coffee-shop-interior-with-warm-lighting--stea.jpg",
               },
               {
-                title: "Reading Nook",
-                image: "quiet corner with bookshelves, soft lighting, and comfortable reading chairs",
+                title: "Cantinho do livro",
+                image: "/placeholder.jpg",
               },
               {
-                title: "Community Table",
-                image: "large wooden communal table with people working on laptops and chatting",
+                title: "Mesa Comunitária",
+                image: "/placeholder-user.jpg",
               },
               {
-                title: "Outdoor Patio",
-                image: "charming outdoor seating area with plants and string lights",
+                title: "Área Externa",
+                image: "/coffee-shop-exterior-with-large-windows--outdoor-s.jpg",
               },
               {
-                title: "Coffee Roasting",
-                image: "coffee roasting equipment and fresh coffee beans in burlap sacks",
+                title: "Café em Grão",
+                image: "/placeholder-logo.png",
               },
             ].map((item, index) => (
               <div key={index} className="group relative overflow-hidden rounded-lg aspect-square">
                 <img
-                  src={`/abstract-geometric-shapes.png?height=400&width=400&query=${item.image}`}
+                  src={item.image}
                   alt={item.title}
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                 />
@@ -183,10 +182,10 @@ export default function CoffeeShopLanding() {
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
             {[
-              { icon: Coffee, number: "50K+", label: "Cups Served" },
-              { icon: Users, number: "10K+", label: "Happy Customers" },
-              { icon: Award, number: "15+", label: "Awards Won" },
-              { icon: Star, number: "4.9", label: "Average Rating" },
+              { icon: Coffee, number: "50K+", label: "Copos servidos" },
+              { icon: Users, number: "10K+", label: "Clientes felizes" },
+              { icon: Award, number: "15+", label: "Conquistas de reconhecimento" },
+              { icon: Star, number: "4.9/5", label: "Média de avaliação" },
             ].map((stat, index) => (
               <div key={index} className="flex flex-col items-center">
                 <stat.icon className="h-12 w-12 mb-4 opacity-90" />
@@ -203,32 +202,32 @@ export default function CoffeeShopLanding() {
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <Badge variant="secondary" className="mb-4">
-              Testimonials
+              Avaliações
             </Badge>
-            <h2 className="text-4xl md:text-5xl font-bold mb-6 text-balance">What Our Customers Say</h2>
+            <h2 className="text-4xl md:text-5xl font-bold mb-6 text-balance">O que nossos clientes dizem sobre nós</h2>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
               {
-                name: "Sarah Johnson",
-                role: "Regular Customer",
+                name: "João Souza",
+                role: "Cliente Fiel",
                 content:
-                  "The best coffee in town! The atmosphere is perfect for both work and relaxation. I come here every morning.",
+                  "O melhor café da cidade, com espaço aconchegante e atendimento impecável. Recomendo a todos os amantes de café!",
                 rating: 5,
               },
               {
-                name: "Mike Chen",
-                role: "Coffee Enthusiast",
+                name: "Mike Rodrigues",
+                role: "Entusiasta de Café",
                 content:
-                  "Exceptional quality and service. The baristas really know their craft, and you can taste the difference in every cup.",
+                  "Qualidae excepcional e ambiente acolhedor. O barista realmente entende de café e faz cada xícara com perfeição.",
                 rating: 5,
               },
               {
-                name: "Emily Davis",
-                role: "Local Resident",
+                name: "Emily Viera",
+                role: "Frequentadora mensal",
                 content:
-                  "This place has become my second home. Great coffee, friendly staff, and a wonderful community atmosphere.",
+                  "Virou minha segunda casa! Adoro o ambiente relaxante e a variedade de opções no menu. Sempre saio satisfeita.",
                 rating: 5,
               },
             ].map((testimonial, index) => (
@@ -257,34 +256,34 @@ export default function CoffeeShopLanding() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
               <Badge variant="secondary" className="mb-4">
-                Visit Us
+                Faça uma visita
               </Badge>
-              <h2 className="text-4xl md:text-5xl font-bold mb-6 text-balance">Find Your Perfect Cup</h2>
+              <h2 className="text-4xl md:text-5xl font-bold mb-6 text-balance">Encontre seu copo perfeito</h2>
               <div className="space-y-6">
                 <div className="flex items-start gap-4">
                   <MapPin className="h-6 w-6 text-primary mt-1 flex-shrink-0" />
                   <div>
-                    <h3 className="font-semibold mb-1">Location</h3>
-                    <p className="text-muted-foreground">123 Coffee Street, Downtown District, City 12345</p>
+                    <h3 className="font-semibold mb-1">Localização</h3>
+                    <p className="text-muted-foreground">123 Rua do café, Dogtown, Nightcity 12345</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-4">
                   <Clock className="h-6 w-6 text-primary mt-1 flex-shrink-0" />
                   <div>
-                    <h3 className="font-semibold mb-1">Hours</h3>
+                    <h3 className="font-semibold mb-1">Horas</h3>
                     <div className="text-muted-foreground space-y-1">
-                      <p>Monday - Friday: 6:00 AM - 9:00 PM</p>
-                      <p>Saturday - Sunday: 7:00 AM - 10:00 PM</p>
+                      <p>Segunda - Sexta: 8:00 - 19:00 </p>
+                      <p>Sábado - Domingo: 9:00 - 16:00 </p>
                     </div>
                   </div>
                 </div>
               </div>
               <div className="mt-8">
                 <Button size="lg" className="mr-4">
-                  Get Directions
+                  Mapa
                 </Button>
                 <Button size="lg" variant="outline">
-                  Call Us
+                  Contato
                 </Button>
               </div>
             </div>
@@ -298,9 +297,9 @@ export default function CoffeeShopLanding() {
       {/* Newsletter CTA */}
       <section className="py-20 bg-primary text-primary-foreground">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6 text-balance">Stay Connected</h2>
+          <h2 className="text-4xl md:text-5xl font-bold mb-6 text-balance">Fique por dentro das novidades</h2>
           <p className="text-xl mb-8 opacity-90 max-w-2xl mx-auto text-pretty">
-            Subscribe to our newsletter for exclusive offers, new menu items, and coffee brewing tips
+            Inscreva-se na nossa newsletter para receber ofertas exclusivas, novidades e dicas de café diretamente na sua caixa de entrada.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center max-w-md mx-auto">
             <input
@@ -309,7 +308,7 @@ export default function CoffeeShopLanding() {
               className="flex-1 px-4 py-3 rounded-lg text-foreground bg-background border-0 focus:ring-2 focus:ring-accent"
             />
             <Button variant="secondary" size="lg" className="px-8">
-              Subscribe
+              Inscreva-se
             </Button>
           </div>
         </div>
@@ -325,7 +324,7 @@ export default function CoffeeShopLanding() {
                 <span className="text-xl font-bold">Brew & Bean</span>
               </div>
               <p className="text-muted-foreground text-pretty">
-                Crafting exceptional coffee experiences since 2010. Where every cup tells a story.
+                Criando café memoráveis desde 2024. Conheça nossa hisroria e paixão por café.
               </p>
             </div>
             <div>
@@ -333,63 +332,53 @@ export default function CoffeeShopLanding() {
               <ul className="space-y-2 text-muted-foreground">
                 <li>
                   <a href="#" className="hover:text-primary transition-colors">
-                    Coffee
+                    Café
                   </a>
                 </li>
                 <li>
                   <a href="#" className="hover:text-primary transition-colors">
-                    Tea
+                    Chá
                   </a>
                 </li>
                 <li>
                   <a href="#" className="hover:text-primary transition-colors">
-                    Pastries
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="hover:text-primary transition-colors">
-                    Sandwiches
+                    Lanches
                   </a>
                 </li>
               </ul>
             </div>
             <div>
-              <h3 className="font-semibold mb-4">About</h3>
+              <h3 className="font-semibold mb-4">Sobre</h3>
               <ul className="space-y-2 text-muted-foreground">
                 <li>
                   <a href="#" className="hover:text-primary transition-colors">
-                    Our Story
+                    Nossa história
                   </a>
                 </li>
                 <li>
                   <a href="#" className="hover:text-primary transition-colors">
-                    Careers
+                    Carreiras
                   </a>
                 </li>
                 <li>
                   <a href="#" className="hover:text-primary transition-colors">
-                    Sustainability
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="hover:text-primary transition-colors">
-                    Press
+                    Sustentabilidade
                   </a>
                 </li>
               </ul>
             </div>
             <div>
-              <h3 className="font-semibold mb-4">Contact</h3>
+              <h3 className="font-semibold mb-4">Contato</h3>
               <ul className="space-y-2 text-muted-foreground">
-                <li>123 Coffee Street</li>
-                <li>Downtown District</li>
-                <li>City 12345</li>
-                <li>(555) 123-BREW</li>
+                <li>123 Rua do café</li>
+                <li>Dogtown</li>
+                <li> Nightcity 12345</li>
+                <li>(555) 123-890</li>
               </ul>
             </div>
           </div>
           <div className="border-t border-border mt-8 pt-8 text-center text-muted-foreground">
-            <p>&copy; 2024 Brew & Bean. All rights reserved.</p>
+            <p>&copy; 2024 Brew & Bean. Todos os direitos reservados.</p>
           </div>
         </div>
       </footer>
