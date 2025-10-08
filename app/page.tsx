@@ -128,7 +128,7 @@ export default function CoffeeShopLanding() {
       </section>
 
       {/* Atmosphere Showcase */}
-      <section className="py-20">
+      <section id="about" className="py-20">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <Badge variant="secondary" className="mb-4">
