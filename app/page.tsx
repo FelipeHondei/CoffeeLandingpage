@@ -11,7 +11,9 @@ export default function CoffeeShopLanding() {
         <div className="container mx-auto px-4 py-4 flex items-center justify-between">
           <div className="flex items-center gap-2">
             <Coffee className="h-8 w-8 text-primary" />
-            <span className="text-2xl font-bold text-foreground">Dogtown Coffee</span>
+            <span className="text-2xl font-bold text-foreground"> 
+              <a href="#hero"> Dogtown Coffee </a>
+            </span>
           </div>
           <div className="hidden md:flex items-center gap-8">
             <a href="#menu" className="text-foreground hover:text-primary transition-colors">
@@ -31,7 +33,7 @@ export default function CoffeeShopLanding() {
       </nav>
 
       {/* Hero Section */}
-      <section className="relative h-screen flex items-center justify-center overflow-hidden">
+      <section id="hero" className="relative h-screen flex items-center justify-center overflow-hidden">
         <div
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{
