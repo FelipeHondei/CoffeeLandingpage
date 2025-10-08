@@ -1,4 +1,4 @@
-# ☕ Brew & Bean - Coffee Shop Landing Page
+# ☕ Dogtown Coffee - Coffee Shop Landing Page
 
 Uma landing page moderna e elegante para cafeteria, desenvolvida com Next.js 14, React e Tailwind CSS.
 
