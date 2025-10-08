@@ -35,7 +35,7 @@ export default function CoffeeShopLanding() {
         <div
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{
-            backgroundImage: `url('/Externa.png')`,
+            backgroundImage: `url('/Hero.png')`,
           }}
         >
           <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/50 to-black/70" />
@@ -80,20 +80,20 @@ export default function CoffeeShopLanding() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {[
               {
-                name: "V",
+                name: "Vincent",
                 description: " Uma combinação explosiva de chocolate amargo com caramelo (Signature Espresso caramel)",
                 price: "R$ 5,90",
                 image: "/V.png",
               },
               {
                 name: " johnny Silverhand",
-                description: "Intenso expresso com leite com caramelo (Caramel Macchiato)",
+                description: "Intensidade e loucura, café expresso com leite com caramelo (Caramel Macchiato)",
                 price: "R$ 8,50",
                 image: "/johnny.png",
               },
               {
                 name: " Adam smasher ",
-                description: "Forte, gelado e com um toque de vanilla (Cold Brew Delight)",
+                description: "Forte, gelado e uma ganancia de sabor com um toque de vanilla (Cold Brew Delight)",
                 price: "R$ 5,00",
                 image: "/smasher.png",
               },
@@ -214,22 +214,22 @@ export default function CoffeeShopLanding() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
               {
-                name: "João Souza",
+                name: "David Martinez",
                 role: "Cliente Fiel",
                 content:
                   "O melhor café da cidade, com espaço aconchegante e atendimento impecável. Recomendo a todos os amantes de café!",
                 rating: 5,
               },
               {
-                name: "Mike Rodrigues",
+                name: "Jackie Welles",
                 role: "Entusiasta de Café",
                 content:
                   "Qualidae excepcional e ambiente acolhedor. O barista realmente entende de café e faz cada xícara com perfeição.",
                 rating: 5,
               },
               {
-                name: "Emily Viera",
-                role: "Frequentadora mensal",
+                name: "Song So Mi",
+                role: "Frequentadora",
                 content:
                   "Virou minha segunda casa! Adoro o ambiente relaxante e a variedade de opções no menu. Sempre saio satisfeita.",
                 rating: 5,
@@ -292,7 +292,7 @@ export default function CoffeeShopLanding() {
               </div>
             </div>
             <div className="aspect-square lg:aspect-auto lg:h-96 rounded-lg overflow-hidden">
-              <img src="/coffee-shop-exterior-with-large-windows--outdoor-s.jpg" alt="Coffee shop exterior" className="w-full h-full object-cover" />
+              <img src="/Externa.png" alt="Coffee shop exterior" className="w-full h-full object-cover" />
             </div>
           </div>
         </div>
