@@ -98,7 +98,7 @@ export default function CoffeeShopLanding() {
                 image: "/smasher.png",
               },
             ].map((product, index) => (
-              <Card key={index} className="group hover:shadow-lg transition-all duration-300 overflow-hidden">
+              <Card key={index} className="group hover:shadow-lg transition-all duration-300 overflow-hidden flex flex-col">
                 <div className="aspect-square overflow-hidden">
                   <img
                     src={product.image}
@@ -106,18 +106,20 @@ export default function CoffeeShopLanding() {
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                   />
                 </div>
-                <CardContent className="p-6">
+                <CardContent className="p-6 flex flex-col flex-1">
                   <div className="flex justify-between items-start mb-3">
                     <h3 className="text-xl font-semibold">{product.name}</h3>
                     <span className="text-lg font-bold text-primary">{product.price}</span>
                   </div>
-                  <p className="text-muted-foreground mb-4 text-pretty">{product.description}</p>
-                  <Button
-                    variant="outline"
-                    className="w-full group-hover:bg-primary group-hover:text-primary-foreground transition-colors bg-transparent"
-                  >
-                    Adicione o pedido
-                  </Button>
+                  <p className="text-muted-foreground mb-4 text-pretty flex-1">{product.description}</p>
+                  <div className="mt-4">
+                    <Button
+                      variant="outline"
+                      className="w-full group-hover:bg-primary group-hover:text-primary-foreground transition-colors bg-transparent"
+                    >
+                      Adicione o pedido
+                    </Button>
+                  </div>
                 </CardContent>
               </Card>
             ))}
